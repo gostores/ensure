@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gostores/ensure"
+	"github.com/govenue/ensure"
 )
 
 var log = os.Getenv("ENSURE_LOG") == "1"

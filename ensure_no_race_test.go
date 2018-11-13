@@ -5,7 +5,7 @@ package ensure_test
 import (
 	"testing"
 
-	"github.com/gostores/ensure"
+	"github.com/govenue/ensure"
 )
 
 func indirect(f ensure.Fataler) {
@@ -15,9 +15,9 @@ func indirect(f ensure.Fataler) {
 func TestIndirectStackTrace(t *testing.T) {
 	var c capture
 	indirect(&c)
-	c.Contains(t, "github.com/gostores/ensure/ensure_no_race_test.go:12")
+	c.Contains(t, "github.com/govenue/ensure/ensure_no_race_test.go:12")
 	c.Contains(t, "indirect")
-	c.Contains(t, "github.com/gostores/ensure_no_race_test.go:17")
+	c.Contains(t, "github.com/govenue/ensure_no_race_test.go:17")
 	c.Contains(t, "TestIndirectStackTrace")
 	c.Contains(t, `expected substring "bar" was not found in "foo"`)
 }

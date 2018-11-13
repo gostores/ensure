@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/gostores/ensure"
+	"github.com/govenue/ensure"
 )
 
 func TestNilErr(t *testing.T) {

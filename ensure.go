@@ -14,10 +14,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gostores/spew"
-	"github.com/gostores/stack"
+	"github.com/govenue/spew"
+	"github.com/govenue/stack"
 
-	subsetp "github.com/gostores/subset"
+	subsetp "github.com/govenue/subset"
 )
 
 // Fataler defines the minimal interface necessary to trigger a Fatal when a
